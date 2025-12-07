@@ -1,0 +1,4 @@
+cd ros2_ws/src/ros2_testing/scripts/
+python -m pytest test_talker.py
+python -m pytest test_talker_listener.py
+python -m pytest test_service_response.py
