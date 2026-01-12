@@ -60,7 +60,5 @@ def test_service_response(rclpy_init, server):
         assert response_msg.success
         assert response_msg.message == 'Service executed successfully'
     finally:
-        # ========== Testing. Fase 4: Limpiar ==========
-
         # Cerrar la comunicacion de ROS2
         rclpy.shutdown()
