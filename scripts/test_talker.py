@@ -30,7 +30,5 @@ def test_talker_publish(rclpy_init, pub_node):
         assert pub_node.publisher_.topic_name == '/chatter'
         assert pub_node.publisher_.msg_type == String
     finally:
-        # ========== Testing. Fase 4: Limpiar ==========
-        
         # Cerrar la comunicacion de ROS2
         rclpy.shutdown()
