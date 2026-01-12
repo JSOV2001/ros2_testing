@@ -42,7 +42,5 @@ def test_talker_listener(rclpy_init, pub_node, sub_node):
         subscribers_amount = pub_node.publisher_.get_subscription_count()
         assert subscribers_amount == 1
     finally:
-        # ========== Testing. Fase 4: Limpiar ==========
-        
         # Cerrar la comunicacion de ROS2
         rclpy.shutdown()
