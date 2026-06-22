@@ -19,8 +19,8 @@ def spin_executor(executor):
 def server():
     # Call server from Trigger service
     server_node = TriggerServer()
-
-    # Inicializar un hilo paralelo para ejecutar servidor
+    
+    # Initialize a parallel thread to execute server
     server_executor = SingleThreadedExecutor()
     server_executor.add_node(server_node)
     server_thread = threading.Thread(target= spin_executor, args=(server_executor,))
